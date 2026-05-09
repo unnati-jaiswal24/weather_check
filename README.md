@@ -29,9 +29,20 @@ This project now uses a local backend proxy so your OpenWeatherMap API key stays
    http://localhost:3000
    ```
 
+## Deploy to Vercel
+
+1. Push your repo to GitHub.
+2. Go to https://vercel.com and log in.
+3. Import the `weather_check` repository.
+4. Set an environment variable on Vercel:
+   - `OPENWEATHER_API_KEY` = your real OpenWeatherMap key
+5. Deploy.
+
+The app will use the serverless function at `/api/weather` to keep the key hidden.
+
 ## How it works
 
-- The browser sends city requests to `/weather`.
-- The backend server reads the API key from `.env`.
+- The browser sends city requests to `/api/weather`.
+- The serverless function reads the API key from Vercel environment variables.
 - Only the server contacts OpenWeatherMap.
 - The key is not exposed in `javascript.js` or `index.html`.
