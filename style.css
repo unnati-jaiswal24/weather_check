@@ -1,0 +1,49 @@
+h1{
+
+    text-align:center;
+    margin-top:50px;
+    color:black;
+}
+.search_box{
+    border:3px solid rgb(23, 135, 205);
+    background-color:white;
+    width:700px;
+    height:50px;
+    border-radius:10px;
+    margin: 30px auto;
+    font-size:20px;
+    text-align:center;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+button{
+    background-color:rgb(23, 135, 205);
+    border:rgb(23, 135, 205);
+    border-radius:10px;
+    height:50px;
+    width:200px;
+    display:block;
+    margin:30px auto;
+    color:white;
+}
+#results{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center;
+
+    margin-top: 30px;
+    color:black;
+}
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/849/560/small/clear-blue-sky-background-free-vector.jpg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+    height: 100vh;
+    margin: 0;
+}
